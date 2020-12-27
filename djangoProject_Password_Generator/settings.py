@@ -25,13 +25,14 @@ SECRET_KEY = 'qd-@$pimyr6tp*x@t_^z_*gtiyl+0o)o+)czaid)vt(so0lra$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django-password-generator.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['django-password-generator.herokuapp.com','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # DJANGO WHITENOISE CONFIGURATION
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
