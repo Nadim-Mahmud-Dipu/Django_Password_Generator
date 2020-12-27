@@ -1,1 +1,1 @@
-web: gunicorn djangoProject_Password_Generator.wsgi.py --log-file -
+web:gunicorn djangoProject_Password_Generator.wsgi --log-file -
